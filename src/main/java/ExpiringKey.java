@@ -1,6 +1,13 @@
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Generic class that is meant to be used in DelayQueue,
+ * representing key used in EvictionMap.
+ * Implements Delayed.
+ * @param <K> key type
+ * @see EvictionMap
+ */
 public class ExpiringKey<K> implements Delayed {
 
   private final long startTime;
